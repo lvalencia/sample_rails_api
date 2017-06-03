@@ -43,10 +43,21 @@ $ RAILS_ENV=production bundle exec rails s
 * [RVM](https://rvm.io/)
 * [Homebrew](https://brew.sh/) (Mac Specific)
 
+### Docker
+Api Consumer is very easy to install and deploy in a Docker container.
 
-### Todos
+We simply use docker-compose to spin up the environment with the proper configuration.
+Feel free to change the Dockerfile and docker-compose.yml file as needed for your environment.
 
- - Dockerize
+```sh
+docker-compose up
+```
+
+Verify the deployment by navigating to your server address in your preferred browser.
+
+```sh
+127.0.0.1:3000
+```
 
 License
 ----
