@@ -6,7 +6,6 @@ class AddressFormatter
   end
 
   def format
-    binding.pry
     {
       address: streets,
       citystatezip: city_state_zip
