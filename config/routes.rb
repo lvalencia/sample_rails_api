@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   scope '/estimate' do
     post '/address', to: 'estimates#address'
+    get '/show', to: 'estimates#show'
   end
 
 end
