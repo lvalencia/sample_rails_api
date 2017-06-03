@@ -18,6 +18,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Zillow API
 gem 'rubillow'
+# Forms Niceties
+gem 'simple_form'
 
 
 group :development, :test do

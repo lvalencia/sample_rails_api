@@ -1,17 +1,11 @@
-<%= form_with(model: estimate, local: true) do |form| %>
-  <% if estimate.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(estimate.errors.count, "error") %> prohibited this estimate from being saved:</h2>
+<%= simple_form_for :address, url: address_path do |f| %>
+    <%= f.input :street_1, as: :string %>
+    <%= f.input :street_2, as: :string %>
+    <%= f.input :city, as: :string %>
+    <%= f.input :state, as: :string %>
+    <%= f.input :postcode, as: :string %>
 
-      <ul>
-      <% estimate.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+    <div class="actions">
+      <%= f.submit 'Estimate Address Value' %>
     </div>
-  <% end %>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>
