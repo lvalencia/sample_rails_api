@@ -28,6 +28,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   # Testing
   gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
   # Debugger
   gem 'pry'
   gem 'pry-remote'
