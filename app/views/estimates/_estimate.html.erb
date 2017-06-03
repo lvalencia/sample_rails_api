@@ -1,0 +1,13 @@
+<div>
+  <h3><%= label_tag :links, 'Links of Interest:' %></h3>
+  <% estimate[:links].each do |k,v| %>
+    <%= link_to translate_key(k), v, target: '_blank'  %><br/>
+  <% end %>
+  <h3><%= label_tag :price, 'Price:' %></h3>
+  <p>The home values at <%= number_to_currency(estimate[:price]) %></p>
+  <p>On the low end the home values at <%= number_to_currency(estimate[:range][:low]) %></p>
+  <p>On the high end the home values at <%= number_to_currency(estimate[:range][:high]) %></p>
+  <h3><%= label_tag :last_updated, 'Last Updated:' %></h3>
+  <p>These estimates were last update on <%= estimate[:last_updated] %></p>
+</div>
+

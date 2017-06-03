@@ -1,2 +1,4 @@
 <h1>Estimate</h1>
-<p>The Estimmate for the address _render_adddress is _render_estiamte</p>
+<h2>The Estimate results for the address</h2>
+<%= render partial: 'estimate', locals: {estimate: @estimate} %>
+<%= link_to 'Back to Estimate', root_path %>

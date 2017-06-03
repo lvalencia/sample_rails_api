@@ -12,15 +12,12 @@ class EstimatesController < ApplicationController
 
     respond_to do |format|
       if estimate[:success?]
-        format.html { redirect_to show_path, notice: 'Price was successfully estimated.' }
+        @estimate = estimate[:results]
+        format.html { render :show }
       else
         format.html { redirect_to root_path, flash: { error: estimate[:error] } }
       end
     end
-  end
-
-  def show
-
   end
 
   private

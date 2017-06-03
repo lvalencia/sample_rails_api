@@ -37,7 +37,7 @@ class HomeEstimateFormatter
     {
       links: extract_links,
       price: payload.price,
-      range: payload.evaluation_range,
+      range: payload.valuation_range,
       last_updated: payload.last_updated
     }
   end

@@ -11,8 +11,5 @@ RSpec.describe EstimatesController, type: :routing do
       expect(:post => '/estimate/address').to route_to('estimates#address')
     end
 
-    it 'routes to #show' do
-      expect(:get => '/estimate/show').to route_to('estimates#show')
-    end
   end
 end
