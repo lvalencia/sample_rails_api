@@ -1,4 +1,7 @@
 RSpec.configure do |config|
+  # Load Dependencies
+  require 'rubillow'
+
   # Load lib Directory
   Dir['./app/lib/*.rb'].each do |file|
     require file
