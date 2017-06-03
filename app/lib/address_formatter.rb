@@ -1,11 +1,12 @@
 class AddressFormatter
   attr_reader :address
 
-  def initialize(address_params)
+  def initialize(address_params:)
     @address = address_params
   end
 
   def format
+    binding.pry
     {
       address: streets,
       citystatezip: city_state_zip
@@ -19,6 +20,6 @@ class AddressFormatter
   end
 
   def city_state_zip
-    "#{address[:city]}, #{address[:state]} #{address[:zip]}}"
+    "#{address[:city]}, #{address[:state]} #{address[:postcode]}"
   end
 end

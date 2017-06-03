@@ -20,7 +20,7 @@ describe AddressFormatter do
       }
     end
 
-    subject { described_class.new(address_params) }
+    subject { described_class.new(address_params: address_params) }
 
     before do
       allow(subject).to receive(:streets).and_return(streets)
